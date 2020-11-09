@@ -328,6 +328,7 @@ public class ArchiveGroupHandler implements FedoraObjectVersionHandler {
             headers.withExternalHandling(
                     externalHandlingMap.get(dv.getDatastreamInfo().getControlGroup()));
             headers.withExternalUrl(dv.getExternalOrRedirectURL());
+            headers.withContentSize(-1L);
         }
 
         headers.withArchivalGroup(false);
